@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="logo/ucn.jpeg">
+    <title>Services | Unity Cyber Netw⚙️rks</title>
+<style>
+           * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+    header {
+    background: #5bc0de;
+    color: white;
+    padding: 20px;
+}
+        .solutions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .need {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <h1>Unity Cyber Netw⚙️rks</h1>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+        </div>
+    </div>
+    
+    <div class="menu-container">
+        <ul class="menu" id="menu">
+            <li><a href="https://unitycybernetworks.github.io/ucn">Home</a></li>
+            <br>
+<li><a href="services">Services</a></li>
+            <br>
+            <li><a href="about">About Us</a></li>
+            <br>
+             <li><a href="contact-us">Contact Us</a></li>
+           <li><a href="https://unitycybernetworks.github.io/ucn/client-portal/coming-soon" class="link-button" target="_blank" style="color:white;">Customer Portal</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+    <div class="solutions">
+        <div class="need">
+            <h2>Automation</h2>
+           <p>What is Tech Automation? <br>
+	      Tech Automation refers to the use of technology to carry human tasks. <br>
+	      Want to find out more ? <a href="services/automation" style="text-decoration:none; color:lightgreen;">Automation</a>
+           </p>
+        </div>
+        <div class="need">
+            <h2>Cable Management</h2>
+            <p>What is cable management and what can UCN do to assist your business ? <br>
+	       Want to find out more ? <a href="services/cable-management" style="text-decoration:none; color:lightgreen;">Cable Management</a> 
+            
+            </p>
+        </div>
+        <div class="need">
+            <h2>ITAM</h2>
+            <p>What does ITAM stand for ? <br> 
+		Want to find out more ? <a href="services/it-asset-management" style="text-decoration:none; color:lightgreen;">IT Asset Management</a>
+            
+            </p>
+        </div>
+        <div class="need">
+            <h2>ITSM</h2>
+            <p>What does ITSM stand for ? <br> 
+		Want to find out more ? <a href="services/it-service-management" style="text-decoration:none; color:lightgreen;">IT Service Management</a>
+            
+            </p>
+        </div>
+        <div class="need">
+            <h2>Networking</h2>
+            <p>What is networking and how can UCN be helpful ? <br> 
+	Want to find out more ? <a href="services/networking" style="text-decoration:none; color:lightgreen;">Networking</a>
+            
+            </p>
+        </div>
+        <div class="need">
+            <h2>SharePoint Migrations</h2>
+            <p>What is SharePoint and how does migrations help your business ? <br> 
+Want to find out more ? <a href="services/sharepoint-migrations" style="text-decoration:none; color:lightgreen;">SharePoint Migration</a>
+            
+            </p>
+        </div>
+    </div>
+        
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="logo/ucn.jpeg" style="width:200px; height:200px;">
+            </div>
+            <div class="footer-section overview">
+                <h3 style="color:white; text-decoration:underline;">Overview</h3>
+                <ul>
+                    <li><a href="sharepoint.html" style="text-decoration:none;"> SharePoint Migrations</a></li><br>
+                    <li><a href="network-monitoring.html" style="text-decoration:none;"> Network Monitoring</a></li><br>
+                    <li><a href="network-management.html" style="text-decoration:none;"> Network Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-section business-info">
+                <h3 style="color:white; text-decoration:underline;">Business Information</h3>
+                <p>Unity Cyber Networks Services Ltd</p>
+                <p>10 Ricardo Path, Thamesmead, London SE28 8AQ</p>
+                <a href="mailto:unitycybernetworks@gmail.com" class="contact-button">unitycybernetworks@gmail.com</a>
+                <a href="tel:07487613849" class="contact-button">07487613849</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
+</body>
+</html>

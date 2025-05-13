@@ -1,0 +1,17 @@
+ <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question"> <span style='font-size:30px;'>&#10010;</span> What is the purpose of this website?</button>
+            <div class="faq-answer">This website provides answers to commonly asked questions.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> <span style='font-size:30px;'>&#10010;</span> How can I contact support?</button>
+            <div class="faq-answer">You can reach our support team via email or phone.</div>
+        </div>
+
+    <script>document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>

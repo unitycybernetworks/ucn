@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+	    <link rel="icon" type="image/png" href="../logo/ucn.jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: lightorange;
+            color: black;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #countdown {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Portal Coming Soon</h1>
+        <p>Unity Cyber Networks is working on something exciting for our customers</p>
+	<p>To find out more about our customer portal email <a href="mailto:unitycybernetworks@gmail.com" style="text-decoration:none; color:black;">unitycybernetworks@gmail.com</a>
+        <div id="countdown"></div>
+    </div>
+
+    <script>
+        function countdown() {
+            const launchDate = new Date("January 01, 2026 12:00:00").getTime();
+            const timer = setInterval(function () {
+                const now = new Date().getTime();
+                const timeLeft = launchDate - now;
+
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML = 
+                    `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+                if (timeLeft < 0) {
+                    clearInterval(timer);
+                    document.getElementById("countdown").innerHTML = "We're live!";
+                }
+            }, 1000);
+        }
+        countdown();
+    </script>
+</body>
+</html>

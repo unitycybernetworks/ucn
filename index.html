@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="logo/ucn.jpeg">
+    <title>Home | Unity Cyber Netw⚙️rks</title>
+        <style>
+           * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .solutions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .need {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+.button {
+  background-color: indigo;
+  border: none;
+  border-radius:15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <h1>Unity Cyber Netw⚙️rks</h1>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+        </div>
+    </div>
+    
+    <div class="menu-container">
+        <ul class="menu" id="menu">
+            <li><a href="https://unitycybernetworks.github.io/ucn">Home</a></li>
+            <br>
+            <li><a href="services">Services</a></li>
+            <br>
+            <li><a href="about">About Us</a></li>
+            <br>
+             <li><a href="contact-us">Contact Us</a></li>
+           <li><a href="https://unitycybernetworks.github.io/ucn/client-portal/coming-soon" class="link-button" target="_blank" style="color:white;">Customer Portal</a></li>
+        </ul>
+    </div>
+<div style="display: flex; align-items: center; justify-content: space-between; background-color: #5bc0de; padding: 20px; border-radius: 8px;">
+    <div style="max-width: 60%; text-align: left;">
+        <h2>Secure your technology future with UCN</h2>
+        <p>Whatever the situation, UCN can resolve it. <br> Look forward and future-proof your business technology, <br> UCN will point you in the right direction.</p>
+        <br>
+      <a href="https://unitycybernetworks.github.io/ucn/contact-us" class="button">Free Consultation</a>
+    </div>
+    <div style="width: 150px;">
+        <img src="logo/ucn.jpeg" alt="Unity Cyber Networks Logo" style="max-width: 100%;">
+    </div>
+</div>
+<br>
+    <h3 style="text-align:center;">Solutions for every business need.</h3> 
+    <br>
+    <div class="solutions">
+        <div class="need">
+            <h2>Networking Monitoring</h2>
+           <p>Ensure your business has the right tools to monitor your company’s infrastructure on a day-to-day basis.</p>
+        </div>
+        <div class="need">
+            <h2>Asset Management</h2>
+            <p>Ensures company assets are tracked, maintained, and logged throughout their lifecycle to maximize value and efficiency.</p>
+        </div>
+        <div class="need">
+            <h2>Cloud Technologies</h2>
+            <p>Cloud technologies, such as virtual machines, have a significant impact on business infrastructure.</p>
+        </div>
+    </div>
+    </div>
+    <h3 style="text-align:center; color:indigo;">Need a personalised solution?</h3> <br>
+    <p style="text-align:center;">
+        Here at Unity Cyber Networks we understand that all users have their individual problems that need solving.  <br> 
+        We are here to help resolve those issues, quickly and efficiently.  <br> 
+        Straight talking when it comes to IT failures and a solution that is right for your individual needs.
+    </p>
+    <br>
+    <center>
+        <a href="https://unitycybernetworks.github.io/ucn/services" class="button">How can we help?</a>
+    </center>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="logo/ucn.jpeg" style="width:200px; height:200px;">
+            </div>
+            <div class="footer-section overview">
+                <h3 style="color:white; text-decoration:underline;">Overview</h3>
+                <ul>
+                    <li><a href="sharepoint.html" style="text-decoration:none;"> SharePoint Migrations</a></li><br>
+                    <li><a href="network-monitoring.html" style="text-decoration:none;"> Network Monitoring</a></li><br>
+                    <li><a href="network-management.html" style="text-decoration:none;"> Network Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-section business-info">
+                <h3 style="color:white; text-decoration:underline;">Business Information</h3>
+                <p>Unity Cyber Networks Services Ltd</p>
+                <p>10 Ricardo Path, Thamesmead, London SE28 8AQ</p>
+                <a href="mailto:unitycybernetworks@gmail.com" class="contact-button">unitycybernetworks@gmail.com</a>
+                <a href="tel:07487613849" class="contact-button">07487613849</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
+</body>
+</html>

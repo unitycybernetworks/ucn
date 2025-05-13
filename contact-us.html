@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="logo/ucn.jpeg">
+    <title>Contact Us | Unity Cyber Netw⚙️rks</title>
+    
+<style>
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input,textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        select{
+            padding: 20px; 
+            color: black; 
+            background white;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textures {
+            resize: vertical;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #5bc0de;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <h1>Unity Cyber Netw⚙️rks</h1>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+        </div>
+    </div>
+    
+    <div class="menu-container">
+        <ul class="menu" id="menu">
+            <li><a href="https://unitycybernetworks.github.io/ucn">Home</a></li>
+            <br>
+<li><a href="services">Services</a></li>
+            <br>
+            <li><a href="about">About Us</a></li>
+            <br>
+             <li><a href="contact-us">Contact Us</a></li>
+            <li><a href="https://unitycybernetworks.github.io/ucn/client-portal/coming-soon" class="link-button" target="_blank" style="color:white;">Customer Portal</a></li>
+        </ul>
+    </div>
+<br>
+<br>
+
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p>At UCN, Though we're technology-driven, <br> we’re also service-led. <br>
+            Our customers are our number one priority <br> we strive to deliver them a service experience that’s second to none.</p>
+
+        <form action="https://formsubmit.co/unitycybernetworks@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New contact form Submitted!">
+                <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://unitycybernetworks.github.io/ucn/thank-you">
+                        <input type="hidden" name="_template" value="table">
+            <label for="full-name">Full Name:</label>
+            <input type="text" name="full-name" required>
+
+            <label for="company-name">Company Name:</label>
+            <input type="text" name="company-name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" required>
+
+            <label for="services">Select a Service:</label>
+            <select name="services">
+                <option value="itsm">ITSM</option>
+                <option value="itam">ITAM</option>
+                <option value="network-monitoring">Network Monitoring</option>
+                <option value="network-management">Network Management</option>
+                <option value="automation">Automation</option>
+                <option value="cable-management">Cable Management</option>
+                <option value="sharepoint-migrations">SharePoint Migrations</option>
+                <option value="cloud-migrations">Cloud Migrations</option>
+            </select>
+
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject">
+
+            <label for="message">Message:</label>
+            <textarea name="message" maxlength="1500"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="logo/ucn.jpeg" style="width:200px; height:200px;">
+            </div>
+            <div class="footer-section overview">
+                <h3 style="color:white; text-decoration:underline;">Overview</h3>
+                <ul>
+                    <li><a href="sharepoint.html" style="text-decoration:none;"> SharePoint Migrations</a></li><br>
+                    <li><a href="network-monitoring.html" style="text-decoration:none;"> Network Monitoring</a></li><br>
+                    <li><a href="network-management.html" style="text-decoration:none;"> Network Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-section business-info">
+                <h3 style="color:white; text-decoration:underline;">Business Information</h3>
+                <p>Unity Cyber Networks Services Ltd</p>
+                <p>10 Ricardo Path, Thamesmead, London SE28 8AQ</p>
+                <a href="mailto:unitycybernetworks@gmail.com" class="contact-button">unitycybernetworks@gmail.com</a>
+                <a href="tel:07487613849" class="contact-button">07487613849</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
+</body>
+</html>
