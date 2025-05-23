@@ -1,131 +1,258 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="icon" type="image/png" href="logo/ucn.jpeg">
+
     <title>About Us | Unity Cyber Netw⚙️rks</title>
+
     <style>
+
         .container {
+
             max-width: 900px;
+
             margin: 0 auto;
+
             background-color: #fff;
+
             padding: 20px;
+
             border-radius: 10px;
+
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
         }
+
         .section {
+
             margin-top: 30px;
+
         }
+
         h2 {
+
             color: #003366;
+
         }
+
         .team-section {
+
             text-align: center;
+
         }
+
         .team-logo {
+
             width: 120px;
+
             height: 120px;
+
             border-radius: 50%;
+
             object-fit: cover;
+
         }
+
         .team-name {
+
             font-size: 20px;
+
             font-weight: bold;
+
             color: black;
+
         }
+
         .team-title {
+
             font-size: 18px;
+
             font-weight: bold;
+
             color: darkblue;
+
         }
+
+
 
     </style>
+
 </head>
+
 <body>
+
     <div class="header">
+
         <div class="header-container">
+
             <h1>Unity Cyber Netw⚙️rks</h1>
+
             <button class="menu-button" onclick="toggleMenu()">☰</button>
+
         </div>
+
     </div>
+
     
+
     <div class="menu-container">
+
         <ul class="menu" id="menu">
+
             <li><a href="https://unitycybernetworks.github.io/ucn">Home</a></li>
+
             <br>
+
     <li><a href="services">Services</a></li>
+
             <br>
+
             <li><a href="about">About Us</a></li>
+
             <br>
+
              <li><a href="contact-us">Contact Us</a></li>
+
             <li><a href="https://unitycybernetworks.github.io/ucn/client-portal/coming-soon" class="link-button" target="_blank" style="color:white;">Customer Portal</a></li>
+
     </div>
+
+
 
 <div class="container">
-        <div class="section">
-                <h2>Experience you can rely on</h2>
-                <p>With over 10 years experience within the IT industry providing support to many different businesses across the UK.</p>
-                <p>UCN has the knowledge and expertise to address you and your IT needs today.</p>
-        </div>
 
         <div class="section">
-            <h2>Why choose UCN as your IT Company?</h2>
-            <p>Award-winning IT & Comms that deliver business transformation and commercial success.</p>
-            <p>If Opportunities aren’t knocking, we can Build you a door.</p>
+
+                <h2>Experience you can rely on</h2>
+
+                <p>With over 10 years experience within the IT industry providing support to many different businesses across the UK.</p>
+
+                <p>UCN has the knowledge and expertise to address you and your IT needs today.</p>
+
         </div>
+
+
+
+        <div class="section">
+
+            <h2>Why choose UCN as your IT Company?</h2>
+
+            <p>Award-winning IT & Comms that deliver business transformation and commercial success.</p>
+
+            <p>If Opportunities aren’t knocking, we can Build you a door.</p>
+
+        </div>
+
+
 
         <div class="section team-section">
+
             <h2>The Team</h2>
+
             <img src="logo/ucn.jpeg" alt="UCN Logo" class="team-logo">
+
             <p class="team-name">Adam</p>
+
             <p class="team-title">Director & Lead Technology Consultant</p>
 
-            <img src="logo/ucn.jpeg" alt="UCN Logo" class="team-logo">
-            <p class="team-name">James</p>
-            <p class="team-title">Operations Manager</p>
 
-            <p>Adam had a dream to start his new business, Unity Cyber Networks. <br> Adam is now in charge of our day-to-day business operations.</p>
+            
+            <img src="logo/ucn.jpeg" alt="UCN Logo" class="team-logo">
+
+            <p class="team-name">James</p>
+
+            <p class="team-title">Operations Manager & Technology Consultant</p>
+
+
+                    
+
+            <p>Adam had a dream to start his new business, Unity Cyber Networks. <br> Adam is now in charge of our day-to-day business operations.</p>
+
             <p>Adam oversees all the business and technical aspects/skills to improve our customer service.</p>
+
         </div>
 
-    
     </div>
 
+
+
        
+
     <br>
+
     <br>
+
     <footer class="footer">
+
         <div class="footer-container">
+
             <div class="footer-section logo">
+
                 <img src="logo/ucn.jpeg" style="width:200px; height:200px;">
+
             </div>
+
             <div class="footer-section overview">
+
                 <h3 style="color:white; text-decoration:underline;">Overview</h3>
+
                 <ul>
+
                     <li><a href="sharepoint.html" style="text-decoration:none;"> SharePoint Migrations</a></li><br>
+
                     <li><a href="network-monitoring.html" style="text-decoration:none;"> Network Monitoring</a></li><br>
+
                     <li><a href="network-management.html" style="text-decoration:none;"> Network Management</a></li>
-            </ul>
+
+                </ul>
+
             </div>
+
             <div class="footer-section business-info">
+
                 <h3 style="color:white; text-decoration:underline;">Business Information</h3>
+
                 <p>Unity Cyber Networks Services Ltd</p>
+
                 <p>10 Ricardo Path, Thamesmead, London SE28 8AQ</p>
+
                 <a href="mailto:unitycybernetworks@gmail.com" class="contact-button">unitycybernetworks@gmail.com</a>
+
                 <a href="tel:07487613849" class="contact-button">07487613849</a>
+
             </div>
+
         </div>
+
     </footer>
 
+
+
     <script src="js/script.js"></script>
+
     <script>document.querySelectorAll('.faq-question').forEach(button => {
+
     button.addEventListener('click', () => {
+
         const answer = button.nextElementSibling;
+
         answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+
     });
+
 });
+
 </script>
+
 </body>
+
 </html>
