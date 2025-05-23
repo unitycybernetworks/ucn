@@ -16,33 +16,76 @@
 
     <style>
 
-     .team-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-  }
+      /* General container styling from original */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-top: 30px;
+        }
+        h2 {
+            color: #003366;
+        }
 
-  .team-member {
-  width: 300px; /* Adjust as needed */
-  margin: 10px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  }
+           /* NEW OR MODIFIED: Team Section Styling for responsiveness */
+        .team-section {
+            text-align: center;
+        }
 
-  .team-member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 5px;
-  }
+        .team-members-container {
+            display: flex; /* Enable Flexbox */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center team members horizontally */
+            gap: 20px; /* Space between team member cards */
+            margin-top: 20px; /* Space below the "The Team" heading */
+        }
 
-  /* Responsive design */
-  @media (max-width: 768px) {
-  .team-member {
-  width: 100%; /* Full width on smaller screens */
-  }
-  }
+        .team-member-card {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            flex: 1 1 300px; /* Allow cards to grow, shrink, and have a base width of 300px */
+            max-width: 350px; /* Max width for larger screens to prevent stretching too wide */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            margin-bottom: 20px; /* Space between stacked cards on mobile */
+        }
+
+        .team-member-card .team-logo { /* Targeting the image within the card */
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px; /* Space between image and name */
+        }
+
+        .team-member-card .team-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 5px;
+        }
+
+        .team-member-card .team-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: darkblue;
+            margin-bottom: 15px;
+        }
+
+        /* Mobile responsiveness for team members */
+        @media (max-width: 768px) {
+            .team-member-card {
+                flex: 1 1 100%; /* Force cards to take full width on smaller screens */
+                max-width: 100%; /* Ensure max width is 100% on small screens */
+            }
+        }
     </style>
 
 </head>
