@@ -16,74 +16,33 @@
 
     <style>
 
-        .container {
+     .team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  }
 
-            max-width: 900px;
+  .team-member {
+  width: 300px; /* Adjust as needed */
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  }
 
-            margin: 0 auto;
+  .team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  }
 
-            background-color: #fff;
-
-            padding: 20px;
-
-            border-radius: 10px;
-
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-        }
-
-        .section {
-
-            margin-top: 30px;
-
-        }
-
-        h2 {
-
-            color: #003366;
-
-        }
-
-        .team-section {
-
-            text-align: center;
-
-        }
-
-        .team-logo {
-
-            width: 120px;
-
-            height: 120px;
-
-            border-radius: 50%;
-
-            object-fit: cover;
-
-        }
-
-        .team-name {
-
-            font-size: 20px;
-
-            font-weight: bold;
-
-            color: black;
-
-        }
-
-        .team-title {
-
-            font-size: 18px;
-
-            font-weight: bold;
-
-            color: darkblue;
-
-        }
-
-
-
+  /* Responsive design */
+  @media (max-width: 768px) {
+  .team-member {
+  width: 100%; /* Full width on smaller screens */
+  }
+  }
     </style>
 
 </head>
@@ -154,24 +113,25 @@
 
 
 
-        <div class="section team-section">
+  <div class="team-section">
+  <div class="team-member">
+  <img src="team-member1.jpg" alt="Team Member 1">
+  <h3>John Doe</h3>
+  <p>Software Engineer</p>
+  </div>
 
-            <h2>The Team</h2>
+  <div class="team-member">
+  <img src="team-member2.jpg" alt="Team Member 2">
+  <h3>Jane Smith</h3>
+  <p>Project Manager</p>
+  </div>
 
-            <img src="logo/ucn.jpeg" alt="UCN Logo" class="team-logo">
-
-            <p class="team-name">Adam</p>
-
-            <p class="team-title">Director & Lead Technology Consultant</p>
-
-
-                    
-
-            <p>Adam had a dream to start his new business, Unity Cyber Networks. <br> Adam is now in charge of our day-to-day business operations.</p>
-
-            <p>Adam oversees all the business and technical aspects/skills to improve our customer service.</p>
-
-        </div>
+  <div class="team-member">
+  <img src="team-member3.jpg" alt="Team Member 3">
+  <h3>Mike Brown</h3>
+  <p>Web Designer</p>
+  </div>
+  </div>
 
     </div>
 
