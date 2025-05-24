@@ -1,8 +1,11 @@
-body {
+I've updated the styles.css file to ensure the login container is perfectly centered on both desktop and mobile views.Here's the revised styles.css content:body {
     font-family: Arial, sans-serif;
     display: flex;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
     background-color: #f4f4f4;
+    margin: 0; /* Remove default body margin */
 }
 
 .login-container {
@@ -10,19 +13,18 @@ body {
     padding: 30px;
     border-radius: 10px;
     height: 400px;
-    margin-top: 100px;
-    margin-left: 500px;
-    margin-right: 500px;
-    width:420px;
+    width: 420px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    /* Removed margin properties as flexbox handles centering */
 }
 
 input {
     display: block;
     margin-left: 5px;
-    margin-right:5px;
+    margin-right: 5px;
     padding: 8px;
     width: 100%;
+    margin-bottom: 15px; /* Added some space below inputs */
 }
 
 button {
@@ -31,4 +33,15 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    width: 100%; /* Made button full width */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
 }
